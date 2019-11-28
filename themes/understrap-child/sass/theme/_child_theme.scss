@@ -1,0 +1,22 @@
+//Generals settings
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $titleFont;
+}
+
+body {
+  font-family: $baseFont;
+}
+
+//Header
+
+.navbar-brand {
+  color: $black;
+}
+
+.bg-primary {
+  background-color: #fff;
+}
