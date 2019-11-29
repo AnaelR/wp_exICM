@@ -13,10 +13,46 @@ body {
 
 //Header
 
-.navbar-brand {
-  color: $black;
+.navbar-brand a,
+.nav-link {
+  color: $black !important;
+  text-decoration: none;
+  font-family: $titleFont;
 }
 
 .bg-primary {
   background-color: #fff;
+}
+
+.home-article:nth-child(1),
+.home-article:nth-child(2),
+.home-article:nth-child(3) {
+  h2 {
+    font-size: 1.2em;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.home-article {
+  img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px grey;
+  margin-bottom: 5%;
+  .entry-content {
+    width: 70%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .entry-header {
+    margin-top: 0.5rem;
+    .entry-title {
+      color: $black;
+      font-size: 1.5em;
+    }
+  }
 }

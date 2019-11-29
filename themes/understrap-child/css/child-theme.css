@@ -11363,10 +11363,41 @@ h4 {
 body {
   font-family: "Raleway", sans-serif; }
 
-.navbar-brand {
-  color: #111111; }
+.navbar-brand a,
+.nav-link {
+  color: #111111 !important;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif; }
 
 .bg-primary {
   background-color: #fff; }
+
+.home-article:nth-child(1) h2,
+.home-article:nth-child(2) h2,
+.home-article:nth-child(3) h2 {
+  font-size: 1.2em; }
+
+.home-article:nth-child(1) img,
+.home-article:nth-child(2) img,
+.home-article:nth-child(3) img {
+  height: 100%; }
+
+.home-article {
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 4px grey;
+          box-shadow: 0px 0px 4px grey;
+  margin-bottom: 5%; }
+  .home-article img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; }
+  .home-article .entry-content {
+    width: 70%;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .home-article .entry-header {
+    margin-top: 0.5rem; }
+    .home-article .entry-header .entry-title {
+      color: #111111;
+      font-size: 1.5em; }
 
 /*# sourceMappingURL=child-theme.css.map */
