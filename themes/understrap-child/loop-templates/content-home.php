@@ -33,8 +33,12 @@ defined( 'ABSPATH' ) || exit;
 	</header><!-- .entry-header -->
 		<?php the_excerpt(); ?>
 
+		<div class="button" id="button-2">
+    <div id="slide"></div>
+    <a href="<?php echo get_permalink(); ?>">Lire la suite</a>
+  </div>
 		<?php
-		wp_link_pages(
+		 wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
 				'after'  => '</div>',

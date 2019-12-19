@@ -5,7 +5,7 @@ Tags: acf, custom fields, meta, admin, fields, form, repeater, content
 Requires at least: 4.9
 Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 0.8.3
+Stable tag: 0.8.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,15 +21,17 @@ All-in-one enhancement suite that improves WordPress & Advanced Custom Fields.
 * 14+ New ACF Fields
 * 10+ ACF Fields Enhanced
 * Bidirectional Fields
-* Post Types / Taxonomies Manager
-* Options Pages / Block Types Manager
-* ACF Forms Manager
+* Advanced Fields Validation
 * Flexible Content as Page Builder
-* Post Meta Overview
-* WordPress Admin Enhancementss
+* ACF Forms Manager
+* ACF Options Pages / Block Types Manager
+* ACF & WordPress Meta Overview
+* WordPress Post Types / Taxonomies Manager
+* WordPress Options Manager
+* WordPress Admin Enhancements
 * ... And many more features
 
-== 👍 Philosophy ==
+== 🤟 Philosophy ==
 
 * 100% free
 * Seemless integration
@@ -38,7 +40,7 @@ All-in-one enhancement suite that improves WordPress & Advanced Custom Fields.
 
 == 🛠️ Links ==
 
-* Join the [ACF community on Slack](https://wpacf.slack.com)
+* Join the [ACF community on Slack](https://join.slack.com/t/wpacf/shared_invite/enQtODQ3OTY0MjY3MTA0LTJjNGUzN2E4ZTcxZWUwZWYyNWY3OTUwYzQzOTMzNDk1MjI3NzMzYjI3ZGYzNGIxN2I1NjM1ZjEzNmE1MGRmNTY)
 * Visit our website [ACF-Extended.com](https://www.acf-extended.com) (WIP)
 * Have a question? [Check the FAQ](https://wordpress.org/plugins/acf-extended/#faq)
 * Found a bug? [Submit a ticket](https://wordpress.org/support/plugin/acf-extended)
@@ -644,6 +646,13 @@ function my_acfe_modules(){
 10. ACF Settings
 
 == Changelog ==
+
+= 0.8.3.1 =
+* Field: Flexible Content - Fixed PHP `Undefined index: acfe_flexible_modal` notice
+* Fields: Select2 CSS Enhanced - Fixed forced height when in multiple mode
+* Fields: Select2 CSS Enhanced - Global standardization of generic select input & select2 style
+* Module: Dynamic Forms - Added missing hook `filter('acfe/form/load/action=my-action-alias',  $args, $post_id);`
+* General: Fixed typo in Readme
 
 = 0.8.3 =
 * Field: Advanced Link - Added "Allowed Post Types" & "Allowed Taxonomies" setting to filter allowed Post types & Taxonomy terms in the post selection
