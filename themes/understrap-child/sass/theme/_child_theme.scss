@@ -126,6 +126,8 @@ body {
 
 @media (min-width: 1200px) {
   .home-article {
+    border-top-left-radius: 225px;
+    border-bottom-left-radius: 225px;
     > div {
       max-height: 230px;
     }
@@ -135,7 +137,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .home-page {
     .home-article:nth-child(1) {
       > div {
@@ -145,7 +147,30 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
+  .home-article {
+    border-top-left-radius: 225px;
+    border-bottom-left-radius: 225px;
+    > div {
+      max-height: 100%;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .home-page {
+    .home-article:nth-child(1) {
+      > div {
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
   .home-article {
     > div {
       max-height: auto;
@@ -156,14 +181,70 @@ body {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 768px) {
+  .home-page {
+    .home-article:nth-child(1) {
+      border-top-left-radius: 155px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-top-right-radius: 155px;
+      > div {
+        max-height: 100%;
+        img {
+          border-top-left-radius: 155px;
+          border-top-right-radius: 155px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .home-article {
+    border-top-left-radius: 155px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
     > div {
-      display: block;
+      display: block !important;
       max-height: auto;
     }
     img {
       object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home-article {
+    border-top-left-radius: 164px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    > div {
+      display: block !important ;
+      max-height: auto;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home-page {
+    .home-article:nth-child(1) {
+      border-top-left-radius: 155px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-top-right-radius: 155px;
+      > div {
+        max-height: 100%;
+        img {
+          border-top-left-radius: 155px;
+          border-top-right-radius: 155px !important;
+        }
+      }
     }
   }
 }
