@@ -28,8 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<?php if ( have_posts() ) : ?>
 
-					<header class="page-header">
-                        coucou
+					<header class="page-header archive">
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -70,5 +69,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #content -->
 
 	</div><!-- #archive-wrapper -->
-
 <?php get_footer();

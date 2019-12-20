@@ -11366,6 +11366,9 @@ body {
 .navbar-toggler {
   background-color: #0000006b !important; }
 
+.navbar-brand {
+  color: #111 !important; }
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -11431,7 +11434,8 @@ body {
 .home-article:nth-child(3) h2 {
   font-size: 1.2em; }
 
-.home-article {
+.home-article,
+.post {
   border-top-left-radius: 225px;
   border-bottom-left-radius: 225px;
   border-bottom-right-radius: 25px;
@@ -11439,20 +11443,25 @@ body {
   -webkit-box-shadow: 0px 0px 4px grey;
           box-shadow: 0px 0px 4px grey;
   margin-bottom: 5%; }
-  .home-article img {
+  .home-article img,
+  .post img {
     border-top-left-radius: 225px;
     border-bottom-left-radius: 225px; }
-  .home-article .entry-content {
+  .home-article .entry-content,
+  .post .entry-content {
     width: 70%;
     margin-left: 1rem;
     margin-right: 1rem; }
-  .home-article .entry-header {
+  .home-article .entry-header,
+  .post .entry-header {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-    .home-article .entry-header .entry-title {
+    .home-article .entry-header .entry-title,
+    .post .entry-header .entry-title {
       color: #111111;
       font-size: 1.5em; }
-  .home-article p:nth-child(2) {
+  .home-article p:nth-child(2),
+  .post p:nth-child(2) {
     margin-bottom: 0; }
 
 @media (min-width: 1200px) {
@@ -11460,12 +11469,15 @@ body {
     max-height: 100%; } }
 
 @media (min-width: 1200px) {
-  .home-article {
+  .home-article,
+  .post {
     border-top-left-radius: 225px;
     border-bottom-left-radius: 225px; }
-    .home-article > div {
+    .home-article > div,
+    .post > div {
       max-height: 230px; }
-    .home-article img {
+    .home-article img,
+    .post img {
       -o-object-fit: cover;
          object-fit: cover; } }
 
@@ -11474,12 +11486,15 @@ body {
     max-height: 100%; } }
 
 @media (max-width: 1200px) {
-  .home-article {
+  .home-article,
+  .post {
     border-top-left-radius: 225px;
     border-bottom-left-radius: 225px; }
-    .home-article > div {
+    .home-article > div,
+    .post > div {
       max-height: 100%; }
-    .home-article img {
+    .home-article img,
+    .post img {
       -o-object-fit: cover;
          object-fit: cover; } }
 
@@ -11488,9 +11503,11 @@ body {
     max-height: 100%; } }
 
 @media (max-width: 990px) {
-  .home-article > div {
+  .home-article > div,
+  .post > div {
     max-height: auto; }
-  .home-article img {
+  .home-article img,
+  .post img {
     -o-object-fit: cover;
        object-fit: cover; } }
 
@@ -11507,28 +11524,34 @@ body {
         border-top-right-radius: 155px; } }
 
 @media (max-width: 768px) {
-  .home-article {
-    border-top-left-radius: 155px;
+  .home-article,
+  .post {
+    border-top-left-radius: 180px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; }
-    .home-article > div {
+    .home-article > div,
+    .post > div {
       display: block !important;
       max-height: auto; }
-    .home-article img {
+    .home-article img,
+    .post img {
       -o-object-fit: cover;
          object-fit: cover; } }
 
 @media (max-width: 576px) {
-  .home-article {
+  .home-article,
+  .post {
     border-top-left-radius: 164px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; }
-    .home-article > div {
+    .home-article > div,
+    .post > div {
       display: block !important;
       max-height: auto; }
-    .home-article img {
+    .home-article img,
+    .post img {
       -o-object-fit: cover;
          object-fit: cover; } }
 
@@ -11551,7 +11574,8 @@ body {
     .home-page .home-article:nth-child(1) div.d-flex img {
       border-bottom-left-radius: 0;
       border-top-right-radius: 25px;
-      width: 100%; }
+      width: 100%;
+      height: 50vh; }
     .home-page .home-article:nth-child(1) div.d-flex .entry-title {
       margin-top: 23px;
       margin-bottom: 16px; }
@@ -11564,10 +11588,19 @@ article.singleArticle div.fullWidthThum {
   height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   article.singleArticle div.fullWidthThum img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%; }
+    width: 100%;
+    border-top-left-radius: 150px; }
+
+.archive {
+  margin-bottom: 35px; }
+
+article.post > div > div footer {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=child-theme.css.map */
