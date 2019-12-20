@@ -11,6 +11,10 @@ body {
   font-family: $baseFont;
 }
 
+.navbar-toggler {
+  background-color: #0000006b !important;
+}
+
 //boutton slide
 
 .button {
@@ -273,6 +277,19 @@ body {
           margin-bottom: 20px;
         }
       }
+    }
+  }
+}
+
+// Un article
+
+article.singleArticle {
+  div.fullWidthThum {
+    height: 45vh;
+    display: flex;
+    img {
+      object-fit: cover;
+      width: 100%;
     }
   }
 }

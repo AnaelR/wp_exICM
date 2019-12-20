@@ -11363,6 +11363,9 @@ h4 {
 body {
   font-family: "Raleway", sans-serif; }
 
+.navbar-toggler {
+  background-color: #0000006b !important; }
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -11556,5 +11559,15 @@ body {
       margin-top: 20px; }
       .home-page .home-article:nth-child(1) div.d-flex p:nth-child(3) a {
         margin-bottom: 20px; }
+
+article.singleArticle div.fullWidthThum {
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  article.singleArticle div.fullWidthThum img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%; }
 
 /*# sourceMappingURL=child-theme.css.map */
